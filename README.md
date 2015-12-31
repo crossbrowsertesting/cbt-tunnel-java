@@ -31,3 +31,9 @@ The tunnel still routes through your computer to download site data, but it furt
 
 	java -jar cbttunnel.jar --authkey AUTHKEY  -proxyip 192.168.1.100 -proxyport 8888
 
+#####Additional Flags:<br>
+
+The -ready switch will touch the file name you pass on the command line when the tunnel is setup to run. This option can be used along with other scripting. When the ready file is touched a script will know when the local connection is up and running.
+	
+	java -jar cbttunnel.jar --authkey AUTHKEY --ready "/path/to/ready/file"
+

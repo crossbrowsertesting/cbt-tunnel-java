@@ -12,25 +12,22 @@ In just a few seconds, you can establish a connection which allows you to do liv
 3. Open a console to the directory of the downloaded jar in the previous step.
 4. Run the appropriate command below.
 
-There are three options provided for you to do this:
+There are three options for creating a Local Connection:
 
 #####Internal websites:
 
 	This directs requests from CBT browsers to your computer to test sites behind your firewall that would otherwise be inaccessible.
 
-	Basic usage: 
-		Command line: 'java -jar cbttunnel.jar --authkey AUTHKEY'
+	java -jar cbttunnel.jar --authkey AUTHKEY
 
 #####Local HTML Files:<br>
 
 	This allows you to host static files on your computer that are not currently hosted on a server, as well as routing through your computer to access local or privileged sites.
 	
-	Basic usage: 
-		Command line: 'java -jar cbttunnel.jar --authkey AUTHKEY --dir "path/to/html"
+	java -jar cbttunnel.jar --authkey AUTHKEY --dir "path/to/html"
 
 #####Proxy Server:<br>
 	The tunnel still routes through your computer to download site data, but it further directs that connection through a proxy of your choosing (always be wary in choosing a proxy--free and unsecure proxies are known to steal personal data).
 
-	Basic usage: 
-		Command line: 'java -jar cbttunnel.jar --authkey AUTHKEY  -proxyip 192.168.1.100 -proxyport 8888'
+	java -jar cbttunnel.jar --authkey AUTHKEY  -proxyip 192.168.1.100 -proxyport 8888
 
